@@ -22,6 +22,7 @@
     let index = 0;
     document.getElementById("next").addEventListener('click', ()=>{
         index === gallery.length-1 ? index = 0 : index++;
+//     click/prev    index === gallery[0] ? index = gallery.length-1 : index--;
         document.querySelector("img").src = gallery[index];
     });
 })();
